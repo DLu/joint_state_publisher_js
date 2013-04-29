@@ -2,7 +2,7 @@ myprojectjs [![Build Status](https://api.travis-ci.org/RobotWebTools/starter-tem
 ===========
 
 #### A Blank Project with Template JavaScript and Build Files
-For full documentation, see [this site](http://example.com/myprojectjs) or check out some [working demos](http://robotwebtools.org/).
+For full documentation, see [the ROS wiki](http://www.ros.org/wiki/JavaScriptStyleGuide) or check out some [working demos](http://robotwebtools.org/).
 
 [JSDoc](http://robotwebtools.org/jsdoc/myprojectjs/current/) can be found on the Robot Web Tools website.
 
