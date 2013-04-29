@@ -1,7 +1,8 @@
 {
   "globals": {
     "module": true,
-    "EventEmitter2" : true
+    "EventEmitter2" : true,
+    "ROSLIB" : true
   },
   "curly": true,
   "eqeqeq": true,
