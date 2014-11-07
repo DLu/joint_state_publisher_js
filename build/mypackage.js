@@ -3,6 +3,6 @@
  */
 
 var MYPROJECT = MYPROJECT || {
-  REVISION : '1'
+  REVISION : '0.0.1-SNAPSHOT'
 };
 
