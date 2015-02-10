@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find r2_description)/robots/r2.urdf.xacro'" />
+    <include file="$(find joint_state_publisher_js)/launch/core.launch" />
+</launch>
+
