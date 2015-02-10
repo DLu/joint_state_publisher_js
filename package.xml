@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>joint_state_publisher_js</name>
+  <version>0.0.0</version>
+  <description>rosjs package for publishing joint states</description>
+
+  <author     email="davidvlu@gmail.com">David V. Lu!!</author>
+  <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
+  <license>BSD</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+</package>
