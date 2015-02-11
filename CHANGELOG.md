@@ -1,3 +1,3 @@
-2013-01-01 - **0.0.1**
- * Initial development of MYPROJECT [(fauthor)](https://github.com/fauthor/)
+2015-02-11 - **0.0.1**
+ * Initial development of JointStatePublisherJS [(DLu)](https://github.com/DLu)
 

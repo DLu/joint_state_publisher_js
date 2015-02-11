@@ -1,7 +1,7 @@
 Original Authors
 ----------------
 
- * [First Author](https://example.edu/~fauthor) (fauthor@example.edu)
+ * [David V. Lu!!](https://github.com/DLu) (davidvlu@gmail.com)
 
 Contributors
 ------------
