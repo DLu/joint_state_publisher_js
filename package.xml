@@ -4,10 +4,15 @@
   <version>0.0.0</version>
   <description>rosjs package for publishing joint states</description>
 
-  <author     email="davidvlu@gmail.com">David V. Lu!!</author>
+  <author email="davidvlu@gmail.com">David V. Lu!!</author>
   <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
   <license>BSD</license>
   
   <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rosbridge_server</run_depend>
+  <run_depend>tf2_web_republisher</run_depend>
+  <run_depend>xacro</run_depend>
   
 </package>
