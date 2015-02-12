@@ -8,7 +8,7 @@
 <script src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
 <script src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
 <script src="http://cdn.robotwebtools.org/ros3djs/current/ros3d.min.js"></script>
-<script src="../js/jsp.js"></script>
+<script src="../build/jointstatepublisher.js"></script>
 
 <script>
   var topic;
@@ -48,18 +48,11 @@
       rootObject : viewer.scene,
       path : 'http://resources.robotwebtools.org/'
     });
-    
-    var param = new ROSLIB.Param({
-       ros : ros,
-       name : 'robot_description'
+        
+    var jsp = new JOINTSTATEPUBLISHER.JointStatePublisher({
+        ros:ros
     });
-    param.get(load_model);
-    
-    topic = new ROSLIB.Topic({
-        ros : ros,
-        name : '/web_joint_states',
-        messageType : 'sensor_msgs/JointState'
-  });
+       
 
 
   }
