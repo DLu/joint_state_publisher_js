@@ -25,6 +25,18 @@ JOINTSTATEPUBLISHER.JointStatePublisher = function(options) {
     name : paramName
   });
   
+  var updateInput = function(event) {
+    var name = event.target.name;
+    var target;
+    if( name.indexOf('_text') >= 0) {
+        target = name.replace('_text', '');
+    }else{
+        target = name + '_text';
+    }
+    document.getElementById(target).value = event.target.value;
+    publish();
+  };
+   
   var load_model = function(param) {
     var parser = new DOMParser();
     var xmlDoc = parser.parseFromString(param, 'text/xml');
@@ -64,7 +76,7 @@ JOINTSTATEPUBLISHER.JointStatePublisher = function(options) {
                 x.setAttribute('id', name + '_text');
                 x.setAttribute('style', 'float: right');
                 x.setAttribute('value', val);
-                x.setAttribute('onblur', 'updateInput(this.value, \'' + name + '_slider\');');
+                x.onblur = updateInput;
                 container.appendChild(x);
                 container.appendChild( document.createElement('br') );
                 
@@ -77,7 +89,7 @@ JOINTSTATEPUBLISHER.JointStatePublisher = function(options) {
                 x.setAttribute('value', val);
                 x.setAttribute('step', (maxval-minval)/100);
                 x.setAttribute('style', 'width: 100%');
-                x.setAttribute('onchange', 'updateInput(this.value, \'' + name + '_text\');');
+                x.onchange = updateInput;
                 container.appendChild(x);
                 container.appendChild( document.createElement('br') );
                 sliders[ sliders.length ] = x;
@@ -109,13 +121,7 @@ JOINTSTATEPUBLISHER.JointStatePublisher = function(options) {
       });
       topic.publish(js);
   }
-  
-  
-  function updateInput(amount, id)
-  {
-      document.getElementById(id).value = amount;
-      publish();
-  }
+
 
 };
 
