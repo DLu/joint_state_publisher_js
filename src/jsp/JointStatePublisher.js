@@ -25,7 +25,7 @@ JOINTSTATEPUBLISHER.JointStatePublisher = function(options) {
     ros : ros,
     name : paramName
   });
-  param.get(load_model);
+  param.get(loadModel);
 
   var topic = new ROSLIB.Topic({
     ros : ros,
@@ -45,7 +45,7 @@ JOINTSTATEPUBLISHER.JointStatePublisher = function(options) {
     publish();
   };
 
-  var load_model = function(param) {
+  var loadModel = function(param) {
     var parser = new DOMParser();
     var xmlDoc = parser.parseFromString(param, 'text/xml');
 
@@ -106,8 +106,7 @@ JOINTSTATEPUBLISHER.JointStatePublisher = function(options) {
     }
   };
 
-  function publish()
-  {
+  function publish() {
       var names = [];
       var values = [];
       for(var index = 0; index < sliders.length; index++) {
