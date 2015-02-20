@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>joint_state_publisher_js</name>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <description>rosjs package for publishing joint states</description>
 
   <author email="davidvlu@gmail.com">David V. Lu!!</author>
