@@ -1,24 +1,22 @@
 jointstatepublisherjs [![Build Status](https://api.travis-ci.org/RobotWebTools/starter-template.png)](https://travis-ci.org/RobotWebTools/starter-template)
 ===========
 
-#### A Blank Project with Template JavaScript and Build Files
-For full documentation, see [the ROS wiki](http://www.ros.org/wiki/JavaScriptStyleGuide) or check out some [working demos](http://robotwebtools.org/).
+#### JointStatePublisher in JavaScript
+For additional documentation, see [the ROS wiki](http://wiki.ros.org/joint_state_publisher_js).
 
 [JSDoc](http://robotwebtools.org/jsdoc/jointstatepublisherjs/current/) can be found on the Robot Web Tools website.
 
 This project is released as part of the [Robot Web Tools](http://robotwebtools.org/) effort.
 
 ### Usage
-Pre-built files can be found in either [myproject.js](build/myproject.js) or [myproject.min.js](build/myproject.min.js).
+Pre-built files can be found in either [jointstatepublisher.js](build/jointstatepublisher.js) or [jointstatepublisher.min.js](build/jointstatepublisher.min.js).
 
-Alternatively, you can use the current release via the CDN: ([full](http://cdn.example.com/jointstatepublisherjs/current/myproject.js)) | ([min](http://cdn.example.com/jointstatepublisherjs/current/myproject.min.js))
+Alternatively, you can use the current release via the CDN: ([full](http://cdn.example.com/jointstatepublisherjs/current/jointstatepublisher.js)) | ([min](http://cdn.example.com/jointstatepublisherjs/current/jointstatepublisher.min.js))
 
 ### Dependencies
 jointstatepublisherjs depends on:
 
-[EventEmitter2](https://github.com/hij1nx/EventEmitter2). The current supported version is 0.4.11. The current supported version can be found [in this project](include/EventEmitter2/eventemitter2.js) or on the Robot Web Tools CDN ([full](http://cdn.robotwebtools.org/EventEmitter2/0.4.11/eventemitter2.js)) | ([min](http://cdn.robotwebtools.org/EventEmitter2/0.4.11/eventemitter2.min.js))
-
-[roslibjs](https://github.com/RobotWebTools/roslibjs). The current supported version is r5. The current supported version can be found [in this project](include/roslibjs/roslib.js) or on the Robot Web Tools CDN: ([full](http://cdn.robotwebtools.org/roslibjs/r5/roslib.js)) | ([min](http://cdn.robotwebtools.org/roslibjs/r5/roslib.min.js))
+[ros3djs](https://github.com/RobotWebTools/ros3djs).
 
 ### Build
 Checkout [utils/README.md](utils/README.md) for details on building.
